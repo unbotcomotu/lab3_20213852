@@ -9,11 +9,12 @@
 <body>
 
 <div class="row">
-    <form th:action="@{'guardarPaciente'}" method="post"></form>
+    <form th:action="@{'guardarPaciente'}" method="post">
     <label for="numero">Número de habitación: </label>
-    <input name="numeroHabitacion" id="numero" th:value="${paciente.numeroHabitacion}" type="text">
+    <input name="numero" id="numero" th:value="${paciente.numeroHabitacion}" type="text">
     <input name="id" type="hidden" th:value="${paciente.id}">
     <button type="submit">Confirmar cambio</button>
+    </form>
 </div>
 
 </body>
