@@ -41,7 +41,7 @@
             <td th:text="${paciente.fechaCita}"></td>
             <td th:text="${paciente.numeroHabitacion}"></td>
             <div th:each="oftalmologo:${listaOftalmologos}">
-                <td th:if="${clinica.id==oftalmologo.clinicaId}" th:text="${oftalmologo.nombre}"></td>
+                <td th:if="${paciente.clinicaId==oftalmologo.id}" th:text="${oftalmologo.nombre}"></td>
             </div>
             <div th:each="clinica:${listaClinicas}">
                 <div th:each="oftalmologo:${listaOftalmologos}">
